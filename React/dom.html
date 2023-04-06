@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Example</title>
+</head>
+
+<body>
+    <div id="myDiv">This is my div element.</div>
+    <button onclick="addParagraph()">Add Paragraph</button>
+    <script>
+        function addParagraph() {
+            // Create a new paragraph element
+            var newParagraph = document.createElement("p");
+
+            // Create some text to put inside the paragraph
+            var textNode = document.createTextNode("This is a new paragraph.");
+
+            // Add the text node to the paragraph element
+            newParagraph.appendChild(textNode);
+
+            // Add the paragraph element to the page
+            document.body.appendChild(newParagraph);
+        }
+    </script>
+     
+</body>
+
+</html>
